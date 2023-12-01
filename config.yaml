@@ -1,0 +1,5 @@
+student_email: uhnsa@yandex.ru
+postgres_cluster:
+  hosts:
+  - address: postgres-db.ru-central1.internal
+    port: 5432

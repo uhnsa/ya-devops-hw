@@ -1,0 +1,13 @@
+[Unit]
+Description=Check Health Bingo Service
+
+[Service]
+Type=exec
+User=devops
+Group=devops
+ExecStart=/home/devops/check-health.sh
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target

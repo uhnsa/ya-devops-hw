@@ -1,0 +1,13 @@
+[Unit]
+Description=Bingo Service
+
+[Service]
+Type=exec
+User=devops
+Group=devops
+ExecStart=/home/devops/bingo run_server
+Restart=always
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target
